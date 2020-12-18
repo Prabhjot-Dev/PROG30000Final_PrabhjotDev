@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ABCBusDB_991396063ModelStoreContainer" CdmEntityContainer="ABCBusDB_991396063Entities">
+    <EntitySetMapping Name="BusInfoes">
+      <EntityTypeMapping TypeName="ABCBusDB_991396063Model.BusInfo">
+        <MappingFragment StoreEntitySet="BusInfo">
+          <ScalarProperty Name="BusId" ColumnName="BusId" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ABCBusDB_991396063Model.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
