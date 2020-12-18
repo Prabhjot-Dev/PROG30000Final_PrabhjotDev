@@ -9,9 +9,20 @@ namespace FinalBusService_991396063
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IBusService_991396063" in both code and config file together.
     [ServiceContract]
-    public interface IBusService_991396063
+    public interface AuthenticateUserService
     {
         [OperationContract]
-        void DoWork();
+        string AuthenticateUser(string Name, string Password);
+    }
+
+    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IBusService_991396063" in both code and config file together.
+    [ServiceContract]
+    public interface DBOperationsService
+    {
+        [OperationContract]
+        void InsertABus(BusInfo bus);
+
+        [OperationContract]
+        List<BusInfo> RetrieveBusInfo();
     }
 }
